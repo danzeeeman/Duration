@@ -14,8 +14,6 @@ fi
 
 ${PREFIX}YCAMInterlab/ofxTimecode.git
 
-${PREFIX}obviousjim/ofxTween.git
-
 ${PREFIX}rezaali/ofxUI
 
 ${PREFIX}obviousjim/ofxLocalization.git
@@ -28,5 +26,6 @@ ${PREFIX}Flightphase/ofxRange.git
 
 ${PREFIX}Flightphase/ofxFTGL.git
 
-${PREFIX}YCAMInterlab/ofxTimeline.git
+${PREFIX}danzeeeman/ofxTimeline.git
 
+${PREFIX}arturoc/ofxEasing

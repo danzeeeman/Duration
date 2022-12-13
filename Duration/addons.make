@@ -1,3 +1,5 @@
+ofxAudioDecoder
+ofxEasing
 ofxFTGL
 ofxLocalization
 ofxMSATimer
@@ -5,7 +7,6 @@ ofxOsc
 ofxRange
 ofxTextInputField
 ofxTimecode
-ofxTimeline
-ofxTween
-ofxUI
 ofxXmlSettings
+ofxTimeline
+ofxUI

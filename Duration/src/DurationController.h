@@ -31,6 +31,7 @@
  */
 
 #pragma once
+#define TIMELINE_AUDIO_INCLUDED
 
 #include "ofMain.h"
 #include "ofxOsc.h"

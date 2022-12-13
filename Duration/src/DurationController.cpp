@@ -1220,7 +1220,7 @@ void DurationController::draw(ofEventArgs& args){
 		if(timeSinceInput > 0 && timeSinceInput < 1.0){
 			//oscilating red to indicate active
 			ofSetColor(200,20,0,(1-timeSinceInput)*(80 + (20*sin(ofGetElapsedTimef()*8)*.5+.5)));
-			ofRect(trackit->second->getTrack()->getDrawRect());
+			ofDrawRectangle(trackit->second->getTrack()->getDrawRect());
 		}
 	}
 	ofPopStyle();
@@ -1233,7 +1233,7 @@ void DurationController::draw(ofEventArgs& args){
 		ofSetColor(200,20,0, 40);
 		ofFill();
 		ofxUIRectangle r = *saveButton->getRect();
-		ofRect(r.x,r.y,r.width,r.height);
+		ofDrawRectangle(r.x,r.y,r.width,r.height);
 		ofPopStyle();
 	}
 	drawTooltips();
@@ -1777,11 +1777,11 @@ void DurationController::drawTooltipDebug(){
 	for(int i = 0; i < tooltips.size(); i++){
 		ofNoFill();
 		ofSetColor(tooltips[i].debugColor, 200);
-		ofRect(tooltips[i].sourceRect.x,tooltips[i].sourceRect.y,tooltips[i].sourceRect.width,tooltips[i].sourceRect.height);
-		ofLine(ofPoint(tooltips[i].sourceRect.getMaxX(),tooltips[i].sourceRect.getMaxX()), tooltips[i].displayPoint);
+		ofDrawRectangle(tooltips[i].sourceRect.x,tooltips[i].sourceRect.y,tooltips[i].sourceRect.width,tooltips[i].sourceRect.height);
+		ofDrawLine(glm::vec2(tooltips[i].sourceRect.getMaxX(),tooltips[i].sourceRect.getMaxX()), tooltips[i].displayPoint);
 		ofFill();
 		ofSetColor(tooltips[i].debugColor, 50);
-		ofRect(tooltips[i].sourceRect.x,tooltips[i].sourceRect.y,tooltips[i].sourceRect.width,tooltips[i].sourceRect.height);
+		ofDrawRectangle(tooltips[i].sourceRect.x,tooltips[i].sourceRect.y,tooltips[i].sourceRect.width,tooltips[i].sourceRect.height);
 		ofSetColor(255);
 		tooltipFont.drawString(tooltips[i].text, tooltips[i].sourceRect.x+5,tooltips[i].sourceRect.y+10);
 	}

@@ -29,6 +29,7 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  *
  */
+#define TIMELINE_AUDIO_INCLUDED
 
 #include "ofxTLUIHeader.h"
 #include "ofxTLAudioTrack.h"
